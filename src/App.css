@@ -61,6 +61,15 @@ body {
   color: white;
 }
 
+.newsBar div {
+  margin: 15px 0px 15px 0px;
+  align-self: center;
+}
+
+#linkTo:hover{
+  filter: brightness(85%);
+  cursor: pointer;
+}
 .carousel-control-next-icon {
   background-image: url("content/arrow-right.png");
   height: 50px;
@@ -73,6 +82,26 @@ body {
 .carousel img {
   opacity: 0.2;
   filter: alpha(opacity=20);
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+  -webkit-filter: grayscale(90%) brightness(100%);
+  filter: grayscale(90%) brightness(100%);
+}
+
+
+.carousel-caption {
+  color: black;
+  text-align: left;
+  right: 30%;
+}
+
+.carousel-caption .btn {
+  background: white;
+  border-radius: 25px;
+  width: 200px;
+  
+}
+.card {
+  margin-top: 40px;
+}
+h3{
+  font-size: 2.5rem;
 }

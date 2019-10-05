@@ -4,6 +4,10 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import MyCards from "./MyCards";
+import building from "./content/building.jpg";
+import { LinkContainer } from "react-router-bootstrap";
+
+
 
 const ageOfArticle = 12; // tu by mohla byť funkcia čo bude počítať počet dní od vydania
 
@@ -17,14 +21,25 @@ class Landing extends Component {
 
         </MyCarousel>
         <Row className="justify-content-center newsBar">
-          <Col>před {ageOfArticle} dny</Col>
-          <Col> {newArticle} </Col>
-          <Col>Přečíst</Col>
+          <Col xs="12" md="3" style={{ textTransform: "uppercase" }}>před {ageOfArticle} dny</Col>
+          <Col xs="12" md="4"> {newArticle} </Col>
+          <Col xs="12" md="3" id="linkTo">
+            <LinkContainer exact to="/11">
+              <div>Přečíst</div>
+            </LinkContainer>
+          </Col>
         </Row>
         <Container>
-          <h2>
+          <h2 style={{ marginTop: "30px" }}>
             Co jsme zač
           </h2>
+          <img
+            src={building}
+            width="400px"
+            height="auto"
+            style={{ float: "left", marginRight: "20px" }}
+            alt="Obrázok budovy"
+          />
           <p>
             V roce 1997 si Martin a Vašek chtěli přivydělat při studiu ČVUT.
             Založili firmu a brzy s překvapením zjistili, že mohou zaměstnat i své přátele, kteří sdílí jejich znalosti a smysl pro humor.
@@ -74,10 +89,13 @@ class Landing extends Component {
               </ol>
             </Col>
           </Row>
+        </Container>
+        <div style={{ backgroundColor: "white" }}>
           <Row className="justify-content-md-center">
             <MyCards />
           </Row>
-        </Container>
+        </div>
+
       </div>
     );
   }
