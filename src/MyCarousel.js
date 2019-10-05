@@ -17,7 +17,7 @@ const MyCarousel = () => {
           <p>Čeká ťe tým mladých lidí zapálených do kódování. Nejsme žádný tiše pracující tým. Rádi si s tebou i během práce pokecáme, zajdeme na oběd nebo poradíme s problémem.</p>
           <Button variant="outline-warning">Více o nás</Button>
         </Carousel.Caption>
-      </Carousel.Item>{/*
+      </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
@@ -28,20 +28,9 @@ const MyCarousel = () => {
         <Carousel.Caption>
           <h3>Second slide label</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <Button variant="outline-warning">Více o nás</Button>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={carouselImg}
-          alt="Third slide"
-        />
-
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-        </Carousel.Caption>
-      </Carousel.Item>*/}
     </Carousel>
   );
 }
