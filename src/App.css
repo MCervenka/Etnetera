@@ -1,13 +1,11 @@
+#image-building {
+  float: left;
+  margin-right: 20px;
+}
+
 .navbar-light .navbar-nav .nav-link.active div {
   color: orange;
   border-bottom: 1px solid orange;
-}
-.navbar-collapse{
-  justify-content: right ;
-}
-
-.carousel-indicators{
-  visibility: hidden;
 }
 
 ul {
@@ -57,7 +55,7 @@ body {
 
 .newsBar{
   text-align: center;
-  background-color: rgb(192, 61, 21);
+  background-color: rgb(232, 78, 14);
   color: white;
 }
 
@@ -70,6 +68,11 @@ body {
   filter: brightness(85%);
   cursor: pointer;
 }
+
+.carousel-indicators{
+  visibility: hidden;
+}
+
 .carousel-control-next-icon {
   background-image: url("content/arrow-right.png");
   height: 50px;
@@ -80,6 +83,8 @@ body {
 }
 
 .carousel img {
+  width:100%;
+  min-height: 250px;
   opacity: 0.2;
   filter: alpha(opacity=20);
   -webkit-filter: grayscale(90%) brightness(100%);
@@ -113,4 +118,53 @@ body {
 }
 .card {
   margin-top: 40px;
+}
+@media only screen and (max-width: 1400px) {
+  .carousel-caption {
+    width: auto;
+    right: 10%;
+    bottom: 30%;
+  }
+  .carousel-caption .btn {
+
+    left: 80%;
+    top: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+  .carousel-caption {
+    width: auto;
+    right: 10%;
+    bottom: 30%;
+  }
+  .carousel-caption .btn {
+
+    left: 50%;
+    top: 100%;
+  }
+  .carousel-caption h3 {
+    margin: 0px 0px 20px 0px;
+    font-size: 1.5rem;
+    
+  }
+  .carousel-caption p {
+    margin: 0px 0px 0px 0px;
+  }
+
+  .newsBar div {
+    margin: 0px 0px 0px 0px;
+    align-self: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #image-building{
+    width: 100%;
+    height: auto;
+  }
+}
+.col h3 {
+  margin-top: 50px;
 }

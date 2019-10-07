@@ -15,8 +15,7 @@ class Header extends Component {
                 <Navbar bg="light" variant="light" expand="md" collapseOnSelect sticky="top" >
                     <Navbar.Brand><Image src={Logo} width="150" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav" style={{ textTransform: "uppercase" }}>
-                        <Nav></Nav>
+                    <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end" style={{ textTransform: "uppercase" }}>
                         <Nav >
                             <LinkContainer exact to="/1">
                                 <Nav.Link> <div>Domů</div> </Nav.Link>

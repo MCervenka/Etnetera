@@ -8,7 +8,7 @@ const MyCarousel = () => {
     <Carousel indicators="false">
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block"
           src={carouselImg}
           alt="First slide"
         />
@@ -20,7 +20,7 @@ const MyCarousel = () => {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block"
           src={carouselImg}
           alt="Third slide"
         />

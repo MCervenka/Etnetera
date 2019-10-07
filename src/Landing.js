@@ -6,7 +6,7 @@ import Container from "react-bootstrap/Container";
 import MyCards from "./MyCards";
 import building from "./content/building.jpg";
 import { LinkContainer } from "react-router-bootstrap";
-
+import Graph from './Graph';
 
 
 const ageOfArticle = 12; // tu by mohla byť funkcia čo bude počítať počet dní od vydania
@@ -37,26 +37,27 @@ class Landing extends Component {
             src={building}
             width="400px"
             height="auto"
-            style={{ float: "left", marginRight: "20px" }}
+            id="image-building"
             alt="Obrázok budovy"
           />
-          <p>
+          <span>
             V roce 1997 si Martin a Vašek chtěli přivydělat při studiu ČVUT.
             Založili firmu a brzy s překvapením zjistili, že mohou zaměstnat i své přátele, kteří sdílí jejich znalosti a smysl pro humor.
-            Po 20+ letech úspěšného fungování je <div className="orange">Etnetera</div> <b>přední společností v oblasti vývoje webových portálů a aplikací</b>.
+            Po 20+ letech úspěšného fungování je <section className="orange">Etnetera</section> <b>přední společností v oblasti vývoje webových portálů a aplikací</b>.
             Naším cílem je být jedničkou na českém trhu v tomto segmentu.
             Orientujeme se na <b>dlouhodobá partnerství a hledání jedinečných řešení s přidanou hodnotou, která vás posunou vpřed</b>.
             Naše sebedůvěra stojí na silném stabilním zázemí a zkušenostech z tisíce náročných projektů pro klienty, ktěří jsou špičkou v oboru.
             Držíme slovo i termíny, dokážeme přiznat a napravit chybu. Věříme sobě i vám.
-          </p>
+          </span>
           <p>
             Pracujeme v liberálním a otevřeném prostředí bez kravat a procesních příruček.
             Inspirujeme se principy svobodné firmy, kde se zisky dělí transparentně, týmy si určují svá vlastní pravidla a management nemá nadstandardní benefity.
             Rádi společně sportujeme a podporujeme se. Kopeme za jeden tým.
           </p>
-          <p>
-            Není proto náhoda, že jsme se <div className="dotted">4 roky po sobě</div> umístili na třech nejvyšších příčkách v soutěži Best Employers ČR.
-          </p>
+          <span>
+            Není proto náhoda, že jsme se <section className="dotted">4 roky po sobě</section> umístili na třech nejvyšších příčkách v soutěži Best Employers ČR.
+          </span>
+          <Graph />
           <Row>
             <Col>
               <h3>Chceš být naším parťákem?</h3>
@@ -90,12 +91,9 @@ class Landing extends Component {
             </Col>
           </Row>
         </Container>
-        <div style={{ backgroundColor: "white" }}>
-          <Row className="justify-content-md-center">
+          <Row className="justify-content-md-center" style={{ backgroundColor: "white", marginRight: "0px" }}>
             <MyCards />
           </Row>
-        </div>
-
       </div>
     );
   }
