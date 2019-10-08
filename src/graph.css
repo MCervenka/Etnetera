@@ -9,14 +9,10 @@ svg.[Attributes Style] {
     height: 10;
 }
 .App h3 {
-    margin-top: 20px;
-    margin-left: 10%;
+    position: absolute;
+    bottom: 105%;
+    left: -10px;
     color: black;
-}
-
-.App img {
-    display: float;
-    top: 40%;
 }
 
 
@@ -50,8 +46,8 @@ svg.[Attributes Style] {
     top: 10%;
     left: -10px;
   }
-  #clock {
-      position: absolute;
-      top: 75%;
-      left: -10px;
-  }
+#clock {
+    position: absolute;
+    top: 75%;
+    left: -10px;
+}

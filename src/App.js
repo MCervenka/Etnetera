@@ -1,13 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import Header from "./Header";
 import Landing from "./Landing";
 
 
-class App extends Component {
-
-
-  render() {
+const App = () => {
     return (
       <div >
         <BrowserRouter>
@@ -19,5 +16,5 @@ class App extends Component {
       </div>
     );
   }
-}
+
 export default App;

@@ -9,6 +9,8 @@ class Graph extends Component {
     constructor(props) {
         super(props);
         this.state = {width: 600, height: 110};
+        console.log = console.warn = console.error = () => {};
+        console.error('Something bad happened.');
       }
     componentDidMount() {
         window.addEventListener("resize", this.resize.bind(this));
@@ -70,14 +72,14 @@ class Graph extends Component {
         const coloredData = data.map(element => addColor(element));
 
     return (
-      <div className="App">
-        <h3>
-            Návštevnosť firmy
-        </h3>
+      <div className="App" style={{marginTop: "80px"}}>
         <XYPlot height={this.state.height} width={this.state.width} colorRange={['rgb(255,197,155)', 'rgb(230,77,33)']}>
             <XAxis tickValues={[0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28]} hideTicks/>
             <XAxis tickFormat={v => `${v/2+8}:00`} tickLabelAngle={-90} />
             <VerticalBarSeries data={coloredData} barWidth={0.97} />
+            <h3>
+                Návštěvnost firmy
+            </h3>
             <div id="legend">
                 <div>
                     <span className="dot" style={{ backgroundColor: "rgb(255,197,155)"}} />

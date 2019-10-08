@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import MyCarousel from "./MyCarousel";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
@@ -7,14 +7,15 @@ import MyCards from "./MyCards";
 import building from "./content/building.jpg";
 import { LinkContainer } from "react-router-bootstrap";
 import Graph from './Graph';
+import MyOverlay from './MyOverlay';
+
+const ageOfArticle = 12;
+
+const newArticle = "Jiří Štěpán z Etnetera Activate poodhlalí zákulisí vykutálené náborové kampaně.";
 
 
-const ageOfArticle = 12; // tu by mohla byť funkcia čo bude počítať počet dní od vydania
 
-const newArticle = "Jiří Štěpán z Etnetera Activate poodhlalí zákulisí vykutálené náborové kampaně."; //přidat řádek?
-
-class Landing extends Component {
-  render() {
+const Landing = () => {
     return (
       <div>
         <MyCarousel>
@@ -40,7 +41,7 @@ class Landing extends Component {
             id="image-building"
             alt="Obrázok budovy"
           />
-          <span>
+          <span style={{display: "block",marginBlockStart: "1em", marginBlockEnd: "1em"}}>
             V roce 1997 si Martin a Vašek chtěli přivydělat při studiu ČVUT.
             Založili firmu a brzy s překvapením zjistili, že mohou zaměstnat i své přátele, kteří sdílí jejich znalosti a smysl pro humor.
             Po 20+ letech úspěšného fungování je <section className="orange">Etnetera</section> <b>přední společností v oblasti vývoje webových portálů a aplikací</b>.
@@ -55,11 +56,11 @@ class Landing extends Component {
             Rádi společně sportujeme a podporujeme se. Kopeme za jeden tým.
           </p>
           <span>
-            Není proto náhoda, že jsme se <section className="dotted">4 roky po sobě</section> umístili na třech nejvyšších příčkách v soutěži Best Employers ČR.
+            Není proto náhoda, že jsme se <div className="tooltipMy">4 roky po sobě<span className="tooltiptext"><b>hustý, co?</b></span></div> umístili na třech nejvyšších příčkách v soutěži Best Employers ČR.
           </span>
           <Graph />
-          <Row>
-            <Col>
+          <Row style={{marginTop: "100px"}}>
+            <Col xs={12} sm={6}>
               <h3>Chceš být naším parťákem?</h3>
               <p>Měl(a) bys:</p>
               <ul>
@@ -72,7 +73,7 @@ class Landing extends Component {
               </ul>
             </Col>
 
-            <Col>
+            <Col xs={12} sm={6}>
               <h3>Co za to dostaneš?</h3>
               <p>Budeme si Tě hýčkat např.:</p>
               <ol type="1">
@@ -91,12 +92,17 @@ class Landing extends Component {
             </Col>
           </Row>
         </Container>
-          <Row className="justify-content-md-center" style={{ backgroundColor: "white", marginRight: "0px" }}>
-            <MyCards />
-          </Row>
+        <Row className="justify-content-center" style={{ backgroundColor: "white", marginRight: "0px", paddingBottom: "50px" }}>
+          <MyCards /> {/*I need different border for card*/}
+        </Row>
+        <div style={{ backgroundColor: "white", textAlign: "center", fontWeight: "bold"}}>
+          <p className="copyright">Copyright</p>
+          <span style={{display: "block"}}>&copy; 2019 ETNETERA</span>         
+          <MyOverlay />
+          <p > Jsme hrdým členem <span className="orange" >Etnetera Group</span></p>
+        </div>
       </div>
     );
-  }
 }
 
 export default Landing;
