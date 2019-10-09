@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../node_modules/react-vis/dist/style.css';
 import {XYPlot, VerticalBarSeries, XAxis} from 'react-vis';
-//import "./Graph.css";
+import "./Graph.css";
 import logo from "./content/vektorov_inteligentn_obje.png";
 import clock from "./content/clock_kopie.png";
  
@@ -73,7 +73,6 @@ class Graph extends Component {
 
     return (
       <div className="App" style={{marginTop: "80px"}}>
-          <link rel="stylesheet" type="text/css" href="Graph.css" />
         <XYPlot height={this.state.height} width={this.state.width} colorRange={['rgb(255,197,155)', 'rgb(230,77,33)']}>
             <XAxis tickValues={[0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28]} hideTicks/>
             <XAxis tickFormat={v => `${v/2+8}:00`} tickLabelAngle={-90} />
