@@ -312,6 +312,7 @@ body {
 .popover{
   max-width: 460px;
   padding: 30px;
+  box-shadow: 0 0 5px 5px rgb(235,235,235);
 }
 
 .popover img{
