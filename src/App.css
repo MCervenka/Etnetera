@@ -122,6 +122,150 @@ body {
 .card {
   margin-top: 40px;
 }
+
+.col h3 {
+  margin-top: 50px;
+}
+
+.tooltipMy {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 3px;
+  border-bottom: orange;
+  border-bottom-style: dashed;
+}
+
+.tooltipMy .tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -75px;
+  background-color: rgb(70,70,70);
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltipMy:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltipMy .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.cardWhite {
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 5px 5px rgb(235,235,235);
+  width: 23rem;
+}
+
+.cardBlack{
+  background-color: black;
+  color: white; 
+  box-shadow: 0 0 5px 5px rgb(235,235,235);
+  width: 23rem;
+}
+
+.card-carousel .carousel-item {
+  float: none;
+}
+
+.card-title {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.card-text {
+  font-size: 1.7rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.card-date {
+  font-size: 1rem;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  text-transform: uppercase;
+}
+
+.card-link {
+  font-size: 1.2rem;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  color: orange;
+  font-weight: bold;
+}
+
+.copyright {
+  text-transform: uppercase;
+  color: orange;
+}
+
+#imgMail {
+  margin-left: 95%;
+}
+#imgMail:hover{
+  cursor: pointer;
+  box-shadow: 0 0 5px 5px rgba(235, 235, 235);
+}
+
+
+.popover{
+  max-width: 460px;
+  padding: 30px;
+  box-shadow: 0 0 5px 5px rgb(235,235,235);
+}
+
+.popover img{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.popover img:hover{
+  cursor: pointer;
+  background-color: orange;
+}
+
+.popover span{
+  color: grey;
+}
+
+.mb {
+  margin-bottom: 20px;
+}
+
+.smallText{
+  font-size: 0.7rem;
+}
+
+.popover button {
+  margin: 20px 0px 20px 0px;
+  padding-left: 80px;
+  padding-right: 80px;
+  font-size: 1.2rem;
+  color: white;
+  border-radius: 40px;
+  background-color: rgb(232, 78, 14);
+}
+
+
 @media only screen and (max-width: 1400px) {
   .carousel-caption {
     width: auto;
@@ -134,6 +278,28 @@ body {
     top: 100%;
   }
 
+}
+@media only screen and (max-width: 1040px) {
+  .nav-link div{
+    font-size: 1rem;
+  }
+  .navbar-brand img {
+    width: 120px;
+  }
+  .card-title {
+    font-size: 2rem;
+  }
+  .card-text {
+    font-size: 1.5rem;
+  }
+  
+  .card-date {
+    font-size: 0.8rem;
+  }
+  
+  .card-link {
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -210,166 +376,4 @@ body {
   .row h3 {
     margin-top: 50px;
   }
-}
-.col h3 {
-  margin-top: 50px;
-}
-
-.tooltipMy {
-  position: relative;
-  display: inline-block;
-  padding-bottom: 3px;
-  border-bottom: orange;
-  border-bottom-style: dashed;
-}
-
-.tooltipMy .tooltiptext {
-  visibility: hidden;
-  width: 150px;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -75px;
-  background-color: rgb(70,70,70);
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
-  position: absolute;
-  z-index: 1;
-}
-
-.tooltipMy:hover .tooltiptext {
-  visibility: visible;
-}
-
-.tooltipMy .tooltiptext::after {
-  content: " ";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: black transparent transparent transparent;
-}
-
-.cardWhite {
-  background-color: white;
-  color: black;
-  box-shadow: 0 0 5px 5px rgb(235,235,235);
-}
-
-.cardBlack{
-  background-color: black;
-  color: white; 
-  box-shadow: 0 0 5px 5px rgb(235,235,235);
-}
-
-.card-carousel .carousel-item {
-  float: none;
-}
-
-.card-title {
-  font-size: 2.5rem;
-  text-align: center;
-  font-weight: bold;
-  margin-bottom: 30px;
-}
-.card-text {
-  font-size: 1.7rem;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.card-date {
-  font-size: 1rem;
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
-  text-transform: uppercase;
-}
-
-.card-link {
-  font-size: 1.2rem;
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-  color: orange;
-  font-weight: bold;
-}
-
-.copyright {
-  text-transform: uppercase;
-  color: orange;
-}
-
-#imgMail {
-  margin-left: 95%;
-}
-#imgMail:hover{
-  cursor: pointer;
-  box-shadow: 0 0 5px 5px rgba(235, 235, 235);
-}
-
-@media only screen and (max-width: 1040px) {
-  .nav-link div{
-    font-size: 1rem;
-  }
-  .navbar-brand img {
-    width: 120px;
-  }
-  .card-title {
-    font-size: 2rem;
-  }
-  .card-text {
-    font-size: 1.5rem;
-  }
-  
-  .card-date {
-    font-size: 0.8rem;
-  }
-  
-  .card-link {
-    font-size: 1rem;
-  }
-}
-
-
-.popover{
-  max-width: 460px;
-  padding: 30px;
-  box-shadow: 0 0 5px 5px rgb(235,235,235);
-}
-
-.popover img{
-  position: absolute;
-  top: 15px;
-  right: 15px;
-}
-
-.popover img:hover{
-  cursor: pointer;
-  background-color: orange;
-}
-
-.popover span{
-  color: grey;
-}
-
-.mb {
-  margin-bottom: 20px;
-}
-
-.smallText{
-  font-size: 0.7rem;
-}
-
-.popover button {
-  margin: 20px 0px 20px 0px;
-  padding-left: 80px;
-  padding-right: 80px;
-  font-size: 1.2rem;
-  color: white;
-  border-radius: 40px;
-  background-color: rgb(232, 78, 14);
 }

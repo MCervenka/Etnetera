@@ -13,7 +13,7 @@ function MyOverlay() {
       <div style={{width: "90%"}}>
         <img src={ mailImg } alt="mail" width="70" id="imgMail" ref={target} onClick={() => setShow(!show)} />
   
-        <Overlay target={target.current} show={show} placement="top" >
+        <Overlay target={target.current} show={show} placement="top-end" >
           {({
             
             scheduleUpdate,

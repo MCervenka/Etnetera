@@ -5,7 +5,7 @@ import Carousel from "react-bootstrap/Carousel";
 
 const CardTemplate = (props) => {
   return (
-    <Card style={{ width: '23rem' }} className={props.myStyle}>
+    <Card className={props.myStyle}>
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Text>
