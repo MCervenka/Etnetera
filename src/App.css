@@ -207,6 +207,9 @@ body {
   #imgMail {
     margin-left: 70%;
   }
+  .row h3 {
+    margin-top: 50px;
+  }
 }
 .col h3 {
   margin-top: 50px;

@@ -8,7 +8,6 @@ import building from "./content/building.jpg";
 import { LinkContainer } from "react-router-bootstrap";
 import Graph from './Graph';
 import MyOverlay from './MyOverlay';
-import Test from "./Test";
 
 const ageOfArticle = 12;
 
