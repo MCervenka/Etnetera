@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../node_modules/react-vis/dist/style.css';
 import {XYPlot, VerticalBarSeries, XAxis} from 'react-vis';
-import "./graph.css";
+import "./Graph.css";
 import logo from "./content/vektorov_inteligentn_obje.png";
 import clock from "./content/clock_kopie.png";
 
