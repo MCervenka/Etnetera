@@ -184,6 +184,9 @@ body {
     left: 50%;
     top: 90%;
   }
+  #imgMail {
+    margin-left: 80%;
+  }
 }
 @media only screen and (max-width: 460px) {
   .carousel-caption h3 {
@@ -200,6 +203,9 @@ body {
   }
   .popover{
     max-width: 330px;
+  }
+  #imgMail {
+    margin-left: 70%;
   }
 }
 .col h3 {
