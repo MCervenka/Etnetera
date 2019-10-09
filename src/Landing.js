@@ -8,6 +8,7 @@ import building from "./content/building.jpg";
 import { LinkContainer } from "react-router-bootstrap";
 import Graph from './Graph';
 import MyOverlay from './MyOverlay';
+import Test from "./Test";
 
 const ageOfArticle = 12;
 
@@ -93,7 +94,7 @@ const Landing = () => {
           </Row>
         </Container>
         <Row className="justify-content-center" style={{ backgroundColor: "white", marginRight: "0px", paddingBottom: "50px" }}>
-          <MyCards /> {/*I need different border for card*/}
+          <MyCards /> 
         </Row>
         <div style={{ backgroundColor: "white", textAlign: "center", fontWeight: "bold"}}>
           <p className="copyright">Copyright</p>
