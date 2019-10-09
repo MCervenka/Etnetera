@@ -13,7 +13,7 @@ function MyOverlay() {
       <div style={{width: "90%"}}>
         <img src={ mailImg } alt="mail" width="70" id="imgMail" ref={target} onClick={() => setShow(!show)} />
   
-        <Overlay target={target.current} show={show} placement="top-end" >
+        <Overlay target={target.current} show={show} placement="top" >
           {({
             
             scheduleUpdate,
@@ -26,7 +26,7 @@ function MyOverlay() {
               style={{
                 ...props.style,
               }}
-              id='popover-positioned-top-end'
+              id='popover-positioned-top-start'
               >
               <Popover.Content>
                 <img src={Close} alt="close-button" onClick={() => setShow(!show)} width="20"/>
