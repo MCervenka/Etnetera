@@ -9,7 +9,7 @@
   border-bottom: 1px solid orange;
 }
 
-.nav-link div{
+.nav-link div {
   font-size: 1.5rem;
 }
 
@@ -18,15 +18,16 @@ ul {
 }
 
 ul li::before {
-  content: url("content/icons8-checkmark.png");
+  content: url('content/icons8-checkmark.png');
 }
 
 ol {
   list-style: none;
-  counter-reset: li}
+  counter-reset: li;
+}
 
 li::before {
-  color:rgb(236, 157, 9);
+  color: rgb(236, 157, 9);
   display: inline-block;
   width: 1em;
   margin-left: -2.5em;
@@ -34,13 +35,12 @@ li::before {
 }
 
 ol li::before {
-  content: "." counter(li) ;
+  content: '.' counter(li);
   text-align: right;
   direction: rtl;
   font-size: 1.2em;
   margin-right: 1.3em;
 }
-
 
 li {
   counter-increment: li;
@@ -48,15 +48,15 @@ li {
 }
 
 body {
-  background-color:rgb(242, 242, 242);
+  background-color: rgb(242, 242, 242);
   font-size: 20px;
 }
-.orange{
+.orange {
   color: rgb(236, 157, 9);
   display: inline;
 }
 
-.newsBar{
+.newsBar {
   text-align: center;
   background-color: rgb(232, 78, 14);
   color: white;
@@ -67,33 +67,32 @@ body {
   align-self: center;
 }
 
-#linkTo:hover{
+#linkTo:hover {
   filter: brightness(85%);
   cursor: pointer;
 }
 
-.carousel-indicators{
+.carousel-indicators {
   visibility: hidden;
 }
 
 .carousel-control-next-icon {
-  background-image: url("content/arrow-right.png");
+  background-image: url('content/arrow-right.png');
   height: 50px;
 }
 .carousel-control-prev-icon {
-  background-image: url("content/arrow-left.png");
+  background-image: url('content/arrow-left.png');
   height: 50px;
 }
 
 .carousel img {
-  width:100%;
+  width: 100%;
   min-height: 250px;
   opacity: 0.2;
   filter: alpha(opacity=20);
   -webkit-filter: grayscale(90%) brightness(100%);
   filter: grayscale(90%) brightness(100%);
 }
-
 
 .carousel-caption {
   color: black;
@@ -102,7 +101,7 @@ body {
   bottom: 30%;
 }
 
-.carousel-caption h3{
+.carousel-caption h3 {
   font-size: 2.5rem;
   margin-bottom: 30px;
 }
@@ -117,7 +116,7 @@ body {
 }
 
 .carousel-caption .btn:hover {
-  background-color:  rgb(236, 157, 9);
+  background-color: rgb(236, 157, 9);
 }
 .card {
   margin-top: 40px;
@@ -129,7 +128,6 @@ body {
 
 .tooltipMy {
   position: relative;
-  display: inline-block;
   padding-bottom: 3px;
   border-bottom: orange;
   border-bottom-style: dashed;
@@ -141,7 +139,7 @@ body {
   bottom: 100%;
   left: 50%;
   margin-left: -75px;
-  background-color: rgb(70,70,70);
+  background-color: rgb(70, 70, 70);
   color: #fff;
   text-align: center;
   padding: 5px 0;
@@ -155,7 +153,7 @@ body {
 }
 
 .tooltipMy .tooltiptext::after {
-  content: " ";
+  content: ' ';
   position: absolute;
   top: 100%;
   left: 50%;
@@ -168,14 +166,14 @@ body {
 .cardWhite {
   background-color: white;
   color: black;
-  box-shadow: 0 0 5px 5px rgb(235,235,235);
+  box-shadow: 0 0 5px 5px rgb(235, 235, 235);
   width: 23rem;
 }
 
-.cardBlack{
+.cardBlack {
   background-color: black;
-  color: white; 
-  box-shadow: 0 0 5px 5px rgb(235,235,235);
+  color: white;
+  box-shadow: 0 0 5px 5px rgb(235, 235, 235);
   width: 23rem;
 }
 
@@ -220,55 +218,55 @@ body {
 #imgMail {
   margin-left: 95%;
 }
-#imgMail:hover{
+#imgMail:hover {
   cursor: pointer;
   box-shadow: 0 0 5px 5px rgba(235, 235, 235);
 }
 
-
-.popover{
+.popover {
   max-width: 460px;
   padding: 30px;
-  box-shadow: 0 0 5px 5px rgb(235,235,235);
+  box-shadow: 0 0 5px 5px rgb(235, 235, 235);
 }
-.modal-open{
-  padding: 30px;
-  box-shadow: 0 0 5px 5px rgb(235,235,235);
+.modal-open {
+  box-shadow: 0 0 5px 5px rgb(235, 235, 235);
 }
 
-.popover img{
+.popover img {
   position: absolute;
   top: 15px;
   right: 15px;
 }
 
-.modal-open img{
+.modal-open img {
   position: absolute;
   top: 15px;
   right: 15px;
 }
-
-.popover img:hover{
+.modal-content {
+  padding: 30px 30px;
+}
+.popover img:hover {
   cursor: pointer;
   background-color: orange;
 }
 
-.modal-open img:hover{
+.modal-open img:hover {
   cursor: pointer;
   background-color: orange;
 }
-.popover span{
+.popover span {
   color: grey;
 }
 
-.modal-open span{
+.modal-open span {
   color: grey;
 }
 .mb {
   margin-bottom: 20px;
 }
 
-.smallText{
+.smallText {
   font-size: 0.7rem;
 }
 
@@ -299,14 +297,12 @@ body {
     bottom: 30%;
   }
   .carousel-caption .btn {
-
     left: 80%;
     top: 100%;
   }
-
 }
 @media only screen and (max-width: 1040px) {
-  .nav-link div{
+  .nav-link div {
     font-size: 1rem;
   }
   .navbar-brand img {
@@ -318,11 +314,11 @@ body {
   .card-text {
     font-size: 1.5rem;
   }
-  
+
   .card-date {
     font-size: 0.8rem;
   }
-  
+
   .card-link {
     font-size: 1rem;
   }
@@ -342,7 +338,6 @@ body {
   .carousel-caption h3 {
     margin: 0px 0px 20px 0px;
     font-size: 1.5rem;
-    
   }
   .carousel-caption p {
     margin: 0px 0px 0px 0px;
@@ -361,7 +356,7 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-  #image-building{
+  #image-building {
     width: 100%;
     height: auto;
   }
@@ -393,7 +388,7 @@ body {
     left: 50%;
     top: 90%;
   }
-  .popover{
+  .popover {
     max-width: 330px;
   }
   #imgMail {
