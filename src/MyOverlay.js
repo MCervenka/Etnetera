@@ -1,19 +1,14 @@
-import React, { useState, useRef }  from "react";
-import mailImg from "./content/email3.png";
+import React  from "react";
 import Popover from 'react-bootstrap/Popover';
 import Overlay from "react-bootstrap/Overlay";
 import Button from "react-bootstrap/Button";
 import Close from "./content/k_ek.png";
 
-function MyOverlay() {
-    const [show, setShow] = useState(false);
-    const target = useRef(null);
-
+function MyOverlay(props) {
+    const {target, show, setShow}  = props;
     return (
-      <div style={{width: "90%"}}>
-        <img src={ mailImg } alt="mail" width="70" id="imgMail" ref={target} onClick={() => setShow(!show)} />
-  
-        <Overlay target={target.current} show={show} placement="top" >
+      <div style={{width: "90%"}}> 
+        <Overlay target={target} show={show} placement="top" >
           {({
             
             scheduleUpdate,
