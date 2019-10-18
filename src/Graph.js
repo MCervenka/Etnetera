@@ -17,9 +17,7 @@ class Graph extends Component {
     window.addEventListener('resize', this.resize.bind(this));
     this.resize();
   }
-  componentDidUpdate() {
-    this.resize();
-  }
+
   resize() {
     if (window.innerWidth <= 800) {
       this.setState({ width: window.innerWidth - 100, height: 90 });
